@@ -45,7 +45,7 @@ gis_data_path = os.path.join('data','gis')
 mf_path = model_path
 
 #file names
-shp_file_nm="Rattlesnake.shp"
+shp_file_nm="RattlesnakePourPoint.shp"
 dfname = "DEMResampledFA.txt"
 flowdirname = "flowdir.txt"
 flowaccname = "flowacc.txt"
@@ -56,10 +56,10 @@ streamfilename = "streams.bin"
 ## set the path to the mfnwt executable 
    # This either needs to be hardcoded, be in the system path, or be
    # in same directory as scripts.
-exe_name = 'mfnwt.exe'
+exe_name = 'mfnwt'
 
 ## shapefile pour point
-shp_file = os.path.join(gis_derived_path,shp_file_nm)
+shp_file = os.path.join(gis_data_path,shp_file_nm)
 dem_file = os.path.join(gis_derived_path, dfname)
 flowacc_file = os.path.join(gis_derived_path, flowaccname)
 flowdir_file = os.path.join(gis_derived_path, flowdirname)
